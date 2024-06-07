@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="https://kit.fontawesome.com/7e1b389372.js" crossorigin="anonymous"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <section>
+        <div class="calculator">
+            <div class="contentCalculator">
+                <h1>Calculadora IMC</h1>
+
+                <div class="info">
+                    <label>Peso em Kg</label>
+
+                    <div class="inputContent">
+                        <input id="peso" type="number">
+                        <p class="dtInput">Kg</p>
+                    </div>
+
+                    <p id="errorPeso"></p>
+                </div>
+
+                <div class="info">
+                    <label>Altura em metros</label>
+
+                    <div class="inputContent">
+                        <input id="altura" type="number">
+                        <p class="dtInput">M</p>
+                    </div>
+
+                    <p id="errorAltura"></p>
+                </div>
+                <button id="calcBtn">Calcular IMC</button>
+            </div>
+        </div>
+
+        <div class="table">
+            <div class="contentTable">
+                <h1>Classificações IMC</h1>
+
+                <div class="tableInfo">
+                    <round class="b"></round>
+                    <p>Abaixo do peso ( IMC: Abaixo de 18.5 )</p>
+                </div>
+
+                <div class="tableInfo">
+                    <round class="g"></round>
+                    <p>Peso normal ( IMC: 18.5 - 24.9 )</p>
+                </div>
+
+                <div class="tableInfo">
+                    <round class="y"></round>
+                    <p>Sobrepeso ( IMC: 25 - 29.9 )</p>
+                </div>
+
+                <div class="tableInfo">
+                    <round class="o"></round>
+                    <p>Obesidade grau 1 ( IMC: 30 - 34.9 )</p>
+                </div>
+
+                <div class="tableInfo">
+                    <round class="r"></round>
+                    <p>Obesidade grau 2 ( IMC: 35 - 39.9 )</p>
+                </div>
+
+                <div class="tableInfo">
+                    <round class="v"></round>
+                    <p>Obesidade grau 3 ( IMC: Acima de 40 )</p>
+                </div>
+
+                <a target="_blank" href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">Clique aqui para mais informações sobre o IMC</a>
+
+            </div>
+        </div>
+
+        <div class="result" id="result">
+            <div class="resultContainer">
+                <div class="resultContent">
+                    <header>
+                        <h1>Resultado</h1>
+                        <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                    </header>
+
+                        <div id="line"></div>
+                    
+                    <div class="resultInfo">
+                        <div class="containerImc">
+                            <p>Seu imc: </p>
+                            <p id="imc"></p>
+                        </div>
+
+                        <div class="containerClass">
+                            <p>Sua classificação: </p>
+                            <p id="class"></p>
+                        </div>
+                    </div>
+
+                    <div class="btnDic">
+                        <a id="btnE" href="https://www.ecycle.com.br/como-engordar/#:~:text=5.-,Adicione%20calorias%20extras%20e%20saud%C3%A1veis%20aos%20seus%20pratos,prejudicar%20tanto%20a%20sua%20sa%C3%BAde.">Dicas para ganhar peso</a>
+                        <a id="btnM" href="https://www.unimedfortaleza.com.br/blog/alimentacao/dicas-praticas-para-manter-o-peso-ideal">Dicas para manter o peso</a>
+                        <a id="btnI" href="https://semprebem.paguemenos.com.br/posts/saude/emagrecer-com-saude">Dicas para emagrecer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
